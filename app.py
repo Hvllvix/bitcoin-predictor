@@ -143,11 +143,11 @@ def load_models_and_assets():
     models, scaler = {}, None
     try:
         models = {
-            "Gradient Boosting": joblib.load('gradient_boosting_model.pkl'),
-            "Random Forest": joblib.load('random_forest_model.pkl'),
-            "Linear Regression": joblib.load('linear_regression_model.pkl')
+            "Gradient Boosting": joblib.load('models/gradient_boosting_model.pkl'),
+            "Random Forest": joblib.load('models/random_forest_model.pkl'),
+            "Linear Regression": joblib.load('models/linear_regression_model.pkl')
         }
-        scaler = joblib.load('feature_scaler.pkl')
+        scaler = joblib.load('models/feature_scaler.pkl')
         is_mock = False
     except:
         st.sidebar.warning("Using Simulated Logic (Real models not found)")
@@ -156,7 +156,7 @@ def load_models_and_assets():
 
 # Load Resources
 historical_ledger = generate_mock_data()
-actual_ledger_path = 'refined_btc_data.csv'
+actual_ledger_path = 'data/refined_btc_data.csv'
 if os.path.exists(actual_ledger_path):
     historical_ledger = pd.read_csv(actual_ledger_path)
     historical_ledger['Date'] = pd.to_datetime(historical_ledger['Date'])
@@ -165,7 +165,7 @@ models_vault, system_scaler, IS_MOCK_ENV = load_models_and_assets()
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.image("bitcoin.png", width=180)
+    st.image("assets/bitcoin.png", width=180)
     st.markdown("## Bitcoin Predictor <span style='color:#ffbf00'>v2.1</span>", unsafe_allow_html=True)
     st.markdown("---")
     
