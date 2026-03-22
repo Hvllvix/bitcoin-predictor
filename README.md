@@ -55,7 +55,7 @@ The final models and scalers were serialized (`.pkl`) and integrated into a Pyth
     ├── README.md                 # Project documentation
     │
     ├── notebook/                 # Research and development environment
-    │   └── bitcoin_prediction.ipynb # Data cleaning, EDA, and model training
+    │   └── bitcoin_prediction.ipynb      # Data cleaning, EDA, and model training
     │
     ├── models/                   # Serialized ML models & data scalers
     │   ├── gradient_boosting_model.pkl
@@ -64,7 +64,7 @@ The final models and scalers were serialized (`.pkl`) and integrated into a Pyth
     │   └── feature_scaler.pkl
     │
     ├── data/                     # Datasets
-    │   └── refined_btc_data.csv  # Cleaned historical ledger data
+    │   └── refined_btc_data.csv          # Cleaned historical ledger data
     │
     └── assets/                   # Static application assets
         └── bitcoin.png           
