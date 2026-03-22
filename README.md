@@ -5,11 +5,11 @@
 
 ## Project Overview
 
-This repository contains the final project for the Intelligent Systems module. The objective of this project is to develop a robust, machine-learning-driven application capable of predicting Bitcoin (BTC) price trajectories based on historical market data and advanced technical indicators.
+This repository contains the final project for the Intelligent Systems module. The objective of this project is to develop a robust, machine-learning-driven application capable of predicting Bitcoin price trajectories based on historical market data and advanced technical indicators.
 
 The project is divided into two main components:
-1. **The Research Environment**: A Jupyter Notebook detailing the data science pipeline (data cleaning, feature engineering, and model training).
-2. **The Inference Engine**: A Streamlit dashboard (The "Golden Matrix") deployed for real-time manual inference and model benchmarking.
+1. **The Research Environment**: A Notebook detailing the data science pipeline (data cleaning, feature engineering, and model training).
+2. **The Inference Engine**: A `Streamlit` dashboard deployed for real-time manual inference and model benchmarking.
 
 ## The Problematic
 
@@ -22,7 +22,7 @@ The core problematic addressed in this project is: **How can we leverage ensembl
 The development of this intelligent system followed a rigorous data science lifecycle:
 
 ### 1. Data Collection & Ingestion
-Historical OHLCV (Open, High, Low, Close, Volume) data for Bitcoin was collected. This raw ledger forms the baseline of the quantitative matrix, capturing the exact moments of institutional and retail liquidity exchanges.
+The foundational dataset, comprising historical OHLCV (Open, High, Low, Close, Volume) records for Bitcoin, was sourced from Kaggle. This raw ledger forms the baseline of the quantitative matrix, capturing the exact moments of institutional and retail liquidity exchanges.
 
 ### 2. Data Cleaning & Preprocessing
 Real-world financial data is often noisy and incomplete. The preprocessing phase (detailed in the notebook) included:
