@@ -50,7 +50,7 @@ The final models and scalers were serialized (`.pkl`) and integrated into a Pyth
 
     basic-bitcoin-prediction/
     │
-    ├── app2.py                   # Main Streamlit application and dashboard UI
+    ├── app.py                   # Main Streamlit application and dashboard UI
     ├── requirements.txt          # Required Python dependencies
     ├── README.md                 # Project documentation
     │
